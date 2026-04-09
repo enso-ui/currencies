@@ -1,8 +1,8 @@
 <template>
-    <enso-table class="box is-paddingless raises-on-hover"
+    <enso-table class="box p-0"
         id="currencies">
         <template #symbol="{ row }">
-            <span class="tag is-table-tag is-warning">
+            <span class="tag is-warning is-bold">
                 {{ row.symbol }}
             </span>
         </template>

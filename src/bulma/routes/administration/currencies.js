@@ -1,6 +1,6 @@
 import routeImporter from '@enso-ui/ui/src/modules/importers/routeImporter';
 
-const routes = routeImporter(require.context('./currencies', false, /.*\.js$/));
+const routes = routeImporter.fromGlob(import.meta.glob('./currencies/*.js', { eager: true }));
 const RouterView = () => import('@enso-ui/ui/src/bulma/pages/Router.vue');
 
 export default {

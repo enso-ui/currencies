@@ -15,7 +15,8 @@
 </template>
 
 <script>
-import { mapState } from 'vuex';
+import { currencies } from '../../pinia/currencies';
+import { useStore } from '../../utils/pinia';
 
 export default {
     name: 'Currencies',
@@ -46,8 +47,12 @@ export default {
     emits: ['update:modelValue'],
 
     computed: {
-        ...mapState(['enums']),
-        ...mapState('currencies', ['currencies']),
+        enums() {
+            return useStore('enums').enums;
+        },
+        currencies() {
+            return currencies().currencies;
+        },
         default() {
             return this.currencies.find(({ isDefault }) => isDefault);
         },
