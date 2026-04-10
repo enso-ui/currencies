@@ -1,31 +1,31 @@
 {
-    "name": "@enso-ui/currencies",
-    "version": "5.2.0",
-    "description": "Currencies package",
-    "main": "src/bulma/pages/currencies/Index.vue",
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/enso-ui/currencies.git"
-    },
-    "keywords": [
-        "currencies",
-        "vue"
-    ],
-    "author": "Adrian Ocneanu <aocneanu@gmail.com>",
-    "license": "MIT",
-    "bugs": {
-        "url": "https://github.com/enso-ui/currencies/issues"
-    },
-    "homepage": "https://github.com/enso-ui/currencies#readme",
-    "dependencies": {
-        "@enso-ui/filters": "^3.2.0",
-        "@enso-ui/forms": "^4.0.0",
-        "@enso-ui/tables": "^4.0.0",
-        "@enso-ui/ui": "^7.0.0",
-        "@fortawesome/fontawesome-svg-core": "^7.2.0",
-        "@fortawesome/free-regular-svg-icons": "^7.2.0",
-        "@fortawesome/free-solid-svg-icons": "^7.2.0",
-        "pinia": "^3.0.0",
-        "vue": "^3.0"
-    }
+  "name": "@enso-ui/currencies",
+  "version": "5.2.0",
+  "description": "Currencies package",
+  "main": "src/bulma/pages/currencies/Index.vue",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/enso-ui/currencies.git"
+  },
+  "keywords": [
+    "currencies",
+    "vue"
+  ],
+  "author": "Adrian Ocneanu <aocneanu@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/enso-ui/currencies/issues"
+  },
+  "homepage": "https://github.com/enso-ui/currencies#readme",
+  "dependencies": {
+    "@enso-ui/filters": "^3.3.0",
+    "@enso-ui/forms": "^4.1.0",
+    "@enso-ui/tables": "^4.1.0",
+    "@enso-ui/ui": "^7.1.0",
+    "@fortawesome/fontawesome-svg-core": "^7.2.0",
+    "@fortawesome/free-regular-svg-icons": "^7.2.0",
+    "@fortawesome/free-solid-svg-icons": "^7.2.0",
+    "pinia": "^3.0.0",
+    "vue": "^3.0"
+  }
 }
