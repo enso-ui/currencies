@@ -18,19 +18,23 @@
   },
   "homepage": "https://github.com/enso-ui/currencies#readme",
   "dependencies": {
-    "@enso-ui/filters": "^3.3.0",
-    "@enso-ui/forms": "^4.1.0",
-    "@enso-ui/tables": "^4.1.0",
-    "@enso-ui/ui": "^7.1.0",
     "@fortawesome/fontawesome-svg-core": "^7.2.0",
     "@fortawesome/free-regular-svg-icons": "^7.2.0",
     "@fortawesome/free-solid-svg-icons": "^7.2.0"
   },
   "peerDependencies": {
+    "@enso-ui/filters": "^3.3.0",
+    "@enso-ui/forms": "^4.1.0",
+    "@enso-ui/tables": "^4.1.0",
+    "@enso-ui/ui": "^7.1.0",
     "pinia": "^3.0.3",
     "vue": "^3.5.0"
   },
   "devDependencies": {
+    "@enso-ui/filters": "^3.3.0",
+    "@enso-ui/forms": "^4.1.0",
+    "@enso-ui/tables": "^4.1.0",
+    "@enso-ui/ui": "^7.1.0",
     "pinia": "^3.0.3",
     "vue": "^3.5.0"
   }
