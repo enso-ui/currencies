@@ -15,8 +15,8 @@
 </template>
 
 <script>
+import { enums as useEnums } from '@enso-ui/enums/src/pinia/enums';
 import { currencies } from '../../pinia/currencies';
-import { useStore } from '../../utils/pinia';
 
 export default {
     name: 'Currencies',
@@ -48,7 +48,7 @@ export default {
 
     computed: {
         enums() {
-            return useStore('enums').enums;
+            return useEnums().enums;
         },
         currencies() {
             return currencies().currencies;
