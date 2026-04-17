@@ -1,6 +1,6 @@
 <template>
-    <div class="columns is-centered">
-        <div class="column is-three-quarters-desktop is-full-touch">
+    <div class="columns is-centered is-mobile">
+        <div class="column is-half-desktop is-two-thirds-touch">
             <enso-form class="box form-box"/>
         </div>
     </div>
