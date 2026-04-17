@@ -44,7 +44,6 @@
 </template>
 
 <script>
-import { enums as useEnums } from '@enso-ui/enums/src/pinia/enums';
 import { EnsoDateFilter, EnsoSelectFilter } from '@enso-ui/filters/bulma';
 import { FilterState } from '@enso-ui/filters/renderless';
 import { EnsoTable } from '@enso-ui/tables/bulma';
@@ -72,11 +71,5 @@ export default {
         },
         params: { interval: 'today' },
     }),
-
-    computed: {
-        enums() {
-            return useEnums().enums;
-        },
-    },
 };
 </script>

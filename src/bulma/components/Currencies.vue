@@ -15,7 +15,6 @@
 </template>
 
 <script>
-import { enums as useEnums } from '@enso-ui/enums/src/pinia/enums';
 import { currencies } from '../../pinia/currencies';
 
 export default {
@@ -47,9 +46,6 @@ export default {
     emits: ['update:modelValue'],
 
     computed: {
-        enums() {
-            return useEnums().enums;
-        },
         currencies() {
             return currencies().currencies;
         },
