@@ -1,7 +1,7 @@
 {
   "name": "@enso-ui/currencies",
   "version": "5.2.6",
-  "description": "Currencies package",
+  "description": "Currencies and exchange-rate administration pages for Enso UI.",
   "main": "src/bulma/pages/currencies/Index.vue",
   "repository": {
     "type": "git",
