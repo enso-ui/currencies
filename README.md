@@ -29,6 +29,7 @@ This package is also available through the full `enso-ui` workspace bundle.
 - ships the currencies and exchange-rates administration page modules
 - exports the `Conversion` service used to call the backend conversion endpoint
 - includes a reusable `Currencies` widget and the Pinia currency store helpers
+- ships the route modules for currencies and exchange-rates list/create/edit flows
 
 ## Usage
 
@@ -51,11 +52,35 @@ Currencies table page.
 
 Import: `@enso-ui/currencies/src/bulma/pages/currencies/Index.vue`
 
+### `CurrenciesCreate`
+
+Create page for a currency record.
+
+Import: `@enso-ui/currencies/src/bulma/pages/currencies/Create.vue`
+
+### `CurrenciesEdit`
+
+Edit page for an existing currency record.
+
+Import: `@enso-ui/currencies/src/bulma/pages/currencies/Edit.vue`
+
 ### `ExchangeRatesIndex`
 
 Exchange-rates table page.
 
 Import: `@enso-ui/currencies/src/bulma/pages/exchangeRates/Index.vue`
+
+### `ExchangeRatesCreate`
+
+Create page for an exchange-rate record.
+
+Import: `@enso-ui/currencies/src/bulma/pages/exchangeRates/Create.vue`
+
+### `ExchangeRatesEdit`
+
+Edit page for an exchange-rate record.
+
+Import: `@enso-ui/currencies/src/bulma/pages/exchangeRates/Edit.vue`
 
 ### `Conversion`
 
@@ -69,6 +94,40 @@ Methods:
 - `amount(value)`
 - `date(value)`
 - `handle()`
+
+## Routes
+
+### `administration/currencies`
+
+Route group:
+- `administration.currencies.index`
+- `administration.currencies.create`
+- `administration.currencies.edit`
+
+Pages:
+- `src/bulma/pages/currencies/Index.vue`
+- `src/bulma/pages/currencies/Create.vue`
+- `src/bulma/pages/currencies/Edit.vue`
+
+### `administration/exchangeRates`
+
+Route group:
+- `administration.exchangeRates.index`
+- `administration.exchangeRates.create`
+- `administration.exchangeRates.edit`
+
+Pages:
+- `src/bulma/pages/exchangeRates/Index.vue`
+- `src/bulma/pages/exchangeRates/Create.vue`
+- `src/bulma/pages/exchangeRates/Edit.vue`
+
+The package ships two administration route groups: one for currencies and one for exchange rates.
+
+## Companion Backend Package
+
+- [`laravel-enso/currencies`](https://docs.laravel-enso.com/backend/currencies.html) [↗](https://github.com/laravel-enso/currencies)
+
+The backend package provides the tables, forms, and conversion endpoint consumed by the frontend pages and the `Conversion` service.
 
 ## Depends On
 
